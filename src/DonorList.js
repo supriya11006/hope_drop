@@ -16,7 +16,7 @@ function DonorList() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:5000/donors"
+        "http://blooddonation.pythonanywhere.com/donors"
       );
 
       setDonors(response.data);
@@ -33,7 +33,7 @@ function DonorList() {
     try {
 
       await axios.delete(
-        `http://127.0.0.1:5000/delete_donor/${id}`
+        `http://blooddonation.pythonanywhere.com/delete_donor/${id}`
       );
 
       alert("Donor Deleted Successfully");

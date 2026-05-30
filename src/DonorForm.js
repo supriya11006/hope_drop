@@ -33,7 +33,7 @@ function DonorForm() {
 
       const response = await axios.post(
 
-        "http://127.0.0.1:5000/add_donor",
+        "http://blooddonation.pythonanywhere.com/add_donor",
 
         formData
       );
