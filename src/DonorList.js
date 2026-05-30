@@ -16,7 +16,7 @@ function DonorList() {
     try {
 
       const response = await axios.get(
-        "http://blooddonation.pythonanywhere.com/donors"
+        "https://blooddonation.pythonanywhere.com/donors"
       );
 
       setDonors(response.data);
@@ -33,7 +33,7 @@ function DonorList() {
     try {
 
       await axios.delete(
-        `http://blooddonation.pythonanywhere.com/delete_donor/${id}`
+        `https://blooddonation.pythonanywhere.com/delete_donor/${id}`
       );
 
       alert("Donor Deleted Successfully");
